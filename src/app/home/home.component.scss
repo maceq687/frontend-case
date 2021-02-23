@@ -1,0 +1,20 @@
+.flex-container {
+  display: flex;
+  height: calc(100vh - 256px);
+  justify-content: center;
+  align-items: center;
+}
+.footer-container {
+  display: flex;
+  height: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+  button {
+    padding: 15px;
+  }
+}
+.big-icon {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+}

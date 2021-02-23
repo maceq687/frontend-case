@@ -1,0 +1,34 @@
+mat-horizontal-stepper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+.j-center {
+  justify-content: center;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex-row-nw {
+  display: flex;
+  flex-direction: row;
+}
+.pad {
+  padding: 0.7em;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  left: -16px;
+  height: 36px;
+  width: 100vw;
+}
+table {
+  width: 300px;
+}

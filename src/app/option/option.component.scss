@@ -1,0 +1,35 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+.j-center {
+  justify-content: center;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex-row-nw {
+  display: flex;
+  flex-direction: row;
+}
+.pad {
+  padding: 0.7em;
+}
+mat-card {
+  margin: 0.7em;
+  width: 220px;
+}
+.head {
+  // justify-content: space-between;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  mat-checkbox {
+    margin-bottom: 3px;
+  }
+  p {
+    margin: 0 0.5em;
+  }
+}

@@ -1,0 +1,36 @@
+@import './../node_modules/@angular/material/theming';
+
+@include mat-core();
+
+@mixin app-elements($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+  @include angular-material-theme($theme);
+
+  body {
+    background-color: mat-color($background, background);
+    color: mat-color($foreground, text);
+  }
+
+  .footer-container {
+    background-color: mat-color($primary, 100);
+  }
+
+  .fixed {
+    background-color: mat-color($background, card);
+  }
+}
+
+$primary: mat-palette($mat-teal, 400);
+$accent: mat-palette($mat-light-green, 300);
+$warn: mat-palette($mat-deep-orange, A200);
+$theme: mat-light-theme($primary, $accent, $warn);
+
+@include app-elements($theme);
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
