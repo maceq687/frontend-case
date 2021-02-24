@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 import { RankingComponent } from './ranking/ranking.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { OptionComponent } from './option/option.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { OptionComponent } from './option/option.component';
     MatSliderModule,
     MatCheckboxModule,
     MatProgressBarModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -34,7 +35,9 @@ export class RankingComponent implements OnInit {
     return value;
   }
 
-  constructor(private _formBuilder: FormBuilder) { }
+  constructor(private _formBuilder: FormBuilder, private httpService: HttpClient) { }
+
+  arrOptions: string[] | any;
 
   ngOnInit(): void {
     this.firstFormGroup = this._formBuilder.group({
@@ -46,7 +49,11 @@ export class RankingComponent implements OnInit {
     this.thirdFormGroup = this._formBuilder.group({
       secondCtrl: ['', Validators.required]
     });
-
+    this.httpService.get('./../../assets/options.json').subscribe(
+      data => {
+        this.arrOptions = data as string [];
+      }
+    )
   }
 
 }

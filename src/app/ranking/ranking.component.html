@@ -8,11 +8,12 @@
           <p class="flex-row j-center">How much Would you like to invest?</p>
           <mat-form-field class="flex-row j-center">
             <input matInput placeholder="Amount" formControlName="firstCtrl" required>
+            <mat-icon matSuffix>attach_money</mat-icon>
           </mat-form-field>
         </div>
         <div class="pad">
           <p class="flex-row j-center">What are you interested in?</p>
-          <div class="flex-row j-center">
+          <div class="flex-row-nw j-center">
             <p class="pad">Low reward<br>Low risk</p>
             <mat-slider style="width: 12em"></mat-slider>
             <p class="pad">High reward<br>High risk</p>
@@ -30,18 +31,15 @@
       <div class="flex-container">
         <p class="flex-row pad j-center">Choose your options:</p>
         <div class="flex-row j-center">
-          <app-option></app-option>
-          <app-option></app-option>
-          <app-option></app-option>
-          <app-option></app-option>
-          <app-option></app-option>
-          <app-option></app-option>
-          <app-option></app-option>
-          <app-option></app-option>
-          <app-option></app-option>
-          <app-option></app-option>
-          <app-option></app-option>
-          <app-option></app-option>
+          <app-option *ngFor="let option of arrOptions"
+            [name]="option.name"
+            [bank]="option.bank"
+            [logo]="option.logo"
+            [reward]="option.reward"
+            [risk]="option.risk"
+            [minInvest]="option.minInvest"
+            [maxInvest]="option.maxInvest">
+          </app-option>
         </div>
         <div class="flex-row pad"></div>
         <div class="flex-row pad"></div>
@@ -65,8 +63,9 @@
             tickInterval="1000"
             step="100"
             min="0"
-            max="100000"></mat-slider>
-            <app-option></app-option>
+            max="1000000"
+            value="100000"></mat-slider>
+            <app-option name="Option A" [checkable]=false></app-option>
           </div>
           <div class="flex-row-nw">
             <mat-slider vertical
@@ -75,8 +74,9 @@
             tickInterval="1000"
             step="100"
             min="0"
-            max="100000"></mat-slider>
-            <app-option></app-option>
+            max="1000000"
+            value="100000"></mat-slider>
+            <app-option name="Option B" [checkable]=false></app-option>
           </div>
           <div class="flex-row-nw">
             <mat-slider vertical
@@ -85,8 +85,9 @@
             tickInterval="1000"
             step="100"
             min="0"
-            max="100000"></mat-slider>
-            <app-option></app-option>
+            max="1000000"
+            value="200000"></mat-slider>
+            <app-option name="Option E" [checkable]=false></app-option>>
           </div>
         </div>
         <div class="flex-row j-center">

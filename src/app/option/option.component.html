@@ -1,16 +1,16 @@
 <mat-card>
   <div class="flex-row-nw head">
-    <mat-checkbox></mat-checkbox>
-    <p>Option A</p>
-    <p style="margin-left: auto;">Bank XYZ</p>
-    <mat-icon style="line-height: inherit;">toys</mat-icon>
+    <mat-checkbox *ngIf="checkable"></mat-checkbox>
+    <p>{{name}}</p>
+    <p style="margin-left: auto;">{{bank}}</p>
+    <mat-icon style="line-height: inherit;">{{logo}}</mat-icon>
   </div>
   <div class="pad">
     <div class="flex-row">
       <p>Reward</p>
     </div>
     <div class="flex-row">
-      <mat-progress-bar mode="determinate" value="36"></mat-progress-bar>
+      <mat-progress-bar mode="determinate" value={{reward}}></mat-progress-bar>
     </div>
   </div>
   <div class="pad">
@@ -18,13 +18,13 @@
       <p>Risk</p>
     </div>
     <div class="flex-row">
-      <mat-progress-bar mode="determinate" value="30"></mat-progress-bar>
+      <mat-progress-bar mode="determinate" value={{risk}}></mat-progress-bar>
     </div>
   </div>
   <div class="flex-row pad">
-    <p>Minimal amount: None</p>
+    <p>Minimal amount: {{minInvest}}</p>
   </div>
   <div class="flex-row pad">
-    <p>Maximal amount: 10000</p>
+    <p>Maximal amount: {{maxInvest}}</p>
   </div>
 </mat-card>

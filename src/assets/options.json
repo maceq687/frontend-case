@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Option A",
+    "bank": "Bank XYZ",
+    "logo": "toys",
+    "reward": 36,
+    "risk": 30,
+    "minInvest": 100,
+    "maxInvest": 10000
+  },
+  {
+    "id": 2,
+    "name": "Option B",
+    "bank": "Bank XYZ",
+    "logo": "toys",
+    "reward": 38,
+    "risk": 34,
+    "minInvest": 10,
+    "maxInvest": 100000
+  },
+  {
+    "id": 3,
+    "name": "Option C",
+    "bank": "Bank ABC",
+    "logo": "explore",
+    "reward": 50,
+    "risk": 38,
+    "minInvest": 1000,
+    "maxInvest": 10000
+  },
+  {
+    "id": 4,
+    "name": "Option D",
+    "bank": "Bank ABC",
+    "logo": "explore",
+    "reward": 30,
+    "risk": 20,
+    "minInvest": 100,
+    "maxInvest": 1000
+  },
+  {
+    "id": 5,
+    "name": "Option E",
+    "bank": "Bank XYZ",
+    "logo": "toys",
+    "reward": 36,
+    "risk": 30,
+    "minInvest": 1,
+    "maxInvest": 10000
+  },
+  {
+    "id": 6,
+    "name": "Option F",
+    "bank": "Bank ABC",
+    "logo": "explore",
+    "reward": 38,
+    "risk": 34,
+    "minInvest": 10,
+    "maxInvest": 100000
+  },
+  {
+    "id": 7,
+    "name": "Option G",
+    "bank": "Bank QWE",
+    "logo": "paid",
+    "reward": 50,
+    "risk": 38,
+    "minInvest": 1000,
+    "maxInvest": 10000
+  },
+  {
+    "id": 8,
+    "name": "Option H",
+    "bank": "Bank QWE",
+    "logo": "paid",
+    "reward": 30,
+    "risk": 20,
+    "minInvest": 100,
+    "maxInvest": 1000
+  },
+  {
+    "id": 9,
+    "name": "Option I",
+    "bank": "Bank DFG",
+    "logo": "savings",
+    "reward": 36,
+    "risk": 30,
+    "minInvest": 10000,
+    "maxInvest": 1000000
+  },
+  {
+    "id": 10,
+    "name": "Option J",
+    "bank": "Bank DFG",
+    "logo": "savings",
+    "reward": 38,
+    "risk": 34,
+    "minInvest": 10000,
+    "maxInvest": 1000000
+  },
+  {
+    "id": 11,
+    "name": "Option K",
+    "bank": "Bank DFG",
+    "logo": "savings",
+    "reward": 50,
+    "risk": 38,
+    "minInvest": 10000,
+    "maxInvest": 100000
+  },
+  {
+    "id": 12,
+    "name": "Option L",
+    "bank": "Bank DFG",
+    "logo": "savings",
+    "reward": 30,
+    "risk": 20,
+    "minInvest": 100,
+    "maxInvest": 10000
+  }
+]
